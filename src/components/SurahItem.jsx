@@ -16,7 +16,7 @@ export default function SurahItem({ surahNumber }) {
   const [ayat, setAyat] = React.useState(1);
 
   async function fetchData() {
-    const res = await fetch(`https:equran.id/api/v2/surat/${surahNumber}`);
+    const res = await fetch(`https://equran.id/api/v2/surat/${surahNumber}`);
 
     if (!res.ok) {
       throw new Error("Failed to fetch data");

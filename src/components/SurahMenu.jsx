@@ -5,7 +5,7 @@ import Cookies from "js-cookie";
 import { useRouter } from "next/navigation";
 
 async function fetchData() {
-  const res = await fetch("https:equran.id/api/v2/surat");
+  const res = await fetch("https://equran.id/api/v2/surat");
 
   if (!res.ok) {
     throw new Error("Failed to fetch data");
